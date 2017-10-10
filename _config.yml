@@ -6,7 +6,7 @@ description: >
   No necesitas experiencia previa.
 baseurl: ''
 permalink: /:title
-url: https://curriculum.cerouno.io
+url: http://curriculum.cerouno.io
 twitter_username: cerounoio
 github_username:  cerounoio
 
@@ -44,3 +44,7 @@ fonts:
 
 sass:
   sass_dir: '/assets/css'
+
+github:
+  source:
+    branch: master
