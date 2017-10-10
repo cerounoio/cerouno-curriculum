@@ -4,10 +4,10 @@ description: >
   Este el sitio del curriculum de CEROUNO, primer programa de
   aprendizaje acelerado para aprender a programar en México en tres meses.
   No necesitas experiencia previa.
-baseurl: ''
+baseurl: /
 root: /
 permalink: /:title
-url: 'http://curriculum.cerouno.io'
+url: http://curriculum.cerouno.io
 twitter_username: cerounoio
 github_username:  cerounoio
 
