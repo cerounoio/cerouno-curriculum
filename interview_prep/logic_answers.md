@@ -3,39 +3,41 @@ title: Respuestas
 layout: main
 ---
 
-# Respuestas
+## RESPUESTAS
 
-### PRIMERA SECCIÓN
+#### PROBLEMA 1
 
-1. E
-2. A
-3. C
-4. B
-5. E
-6. D
+1. Respuesta - 5
+2. Respuesta - 1
+3. Respuesta - 3
+4. Respuesta - 2
+5. Respuesta - 5
+6. Respuesta - 4
 
-### SEGUNDA SECCIÓN
+#### PROBLEMA 2
 
-7. D
-8. C
-9. C
-10. E
-11. A
-12. B
+7. Respuesta - 4
+8. Respuesta - 3
+9. Respuesta - 3
+10. Respuesta - 5
+11. Respuesta - 1
+12. Respuesta - 2
 
-### TERCERA SECCIÓN
+#### PROBLEMA 3
 
-13. C
-14. D
-15. E
-16. D
-17. B
-18. B
+13. Respuesta - 3
+14. Respuesta - 4
+15. Respuesta - 5
+16. Respuesta - 4
+17. Respuesta - 2
+18. Respuesta - 2
 
-### CUARTA SECCIÓN
+#### PROBLEMA 4
 
-19. A
-20. A
-21. C
-22. C
-23. E
+19. Respuesta - 1
+20. Respuesta - 1
+21. Respuesta - 3
+22. Respuesta - 3
+23. Respuesta - 5
+
+###### [VER PREGUNTAS](/interview_prep/logic_questions)
