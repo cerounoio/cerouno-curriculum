@@ -1,8 +1,8 @@
 ---
-title: Environment Setup
-program: WAD
+title: Preparacion del Ambiente de Desarrollo
+program: DAW
 module: M1
-layout: lesson
+layout: main
 ---
 
 # Preparación del Ambiente de Desarrollo
