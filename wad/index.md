@@ -1,5 +1,6 @@
 ---
 title: Desarrollo de Aplicaciones Web
+program: WAD
 layout: main
 ---
 

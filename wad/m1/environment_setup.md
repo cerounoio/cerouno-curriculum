@@ -1,3 +1,10 @@
+---
+title: Environment Setup
+program: WAD
+module: M1
+layout: main
+---
+
 # Preparación del Ambiente de Desarrollo
 
 Cuándo eres desarrollador de software, nos referimos al **ambiente de desarrollo** (o *development environment* en inglés) al conjunto de herramientas en tu computadora que te permiten programar. Estas varían entre lenguajes de programación, sistemas operativos e incluso, entre compañías.

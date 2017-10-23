@@ -1,3 +1,10 @@
+---
+title: Desarrollo de Aplicaciones Web - Módulo 1
+program: WAD
+module: M1
+layout: main
+---
+
 ### Desarrollo de Aplicaciones Web
 ## Programación Orientada a Objetos
 ### Módulo 1
