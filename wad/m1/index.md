@@ -5,16 +5,22 @@ module: M1
 layout: main
 ---
 
-### Desarrollo de Aplicaciones Web
 ## Programación Orientada a Objetos
-### Módulo 1
 
-#### Semana 1 - Fundamentos de JavaScript
+#### Módulo 1
 
-##### [Environment Setup](/wad/m1/environment_setup)
-##### [Intro to Git](/wad/m1/intro_to_git)
-##### [Intro to JavaScript](/wad/m1/intro_to_javascript)
+Semana 1 - Fundamentos de JavaScript
 
-#### Semana 2 - Pensamiento Algorítmico
+* [Environment Setup](/wad/m1/environment_setup)
+* [Intro to Git](/wad/m1/intro_to_git)
+* [Intro to JavaScript](/wad/m1/intro_to_javascript)
+
+Semana 2 - Pensamiento Algorítmico
+
+* [Environment Setup](/wad/m1/environment_setup)
+* [Intro to Git](/wad/m1/intro_to_git)
+* [Intro to JavaScript](/wad/m1/intro_to_javascript)
+
 #### Semana 3 - Datos Relacionales
+
 #### Semana 4 - Express

@@ -2,7 +2,7 @@
 title: Environment Setup
 program: WAD
 module: M1
-layout: main
+layout: lesson
 ---
 
 # Preparación del Ambiente de Desarrollo
@@ -15,9 +15,9 @@ Para instalar **Atom** simplemente visita [esta página](http://atom.io) y desca
 
 Selecciona las instrucciones dependiendo de tu sistema operativo:
 
-1. [MacOS](#macOS)
+1. [macOS](#macOS)
 2. [Ubuntu](#ubuntu)
-3. Windows
+3. [Windows](#windows)
 
 ### <a name='macOS'></a> macOS
 
