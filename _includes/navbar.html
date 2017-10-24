@@ -5,9 +5,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="/{{ page.program }}">{{ page.program }}</a>
-      <a class="nav-item nav-link" href="/{{ page.program }}/{{ page.module }}">{{ page.module }}</a>
-      <a class="nav-item nav-link" href="/{{ page.program }}/{{ page.module }}/{{ page.title | downcase | replace: ' ', '_' }}">{{ page.title }}</a>
+      <a class="nav-item nav-link" href="/{{ page.program | downcase }}/index">{{ page.program }}</a>
+      <a class="nav-item nav-link" href="/{{ page.program | downcase }}/{{ page.module | downcase }}/index">{{ page.module }}</a>
+      <a class="nav-item nav-link" href="/{{ page.program | downcase }}/{{ page.module | downcase }}/{{ page.title | downcase | replace: ' ', '_' }}">{{ page.title }}</a>
     </div>
   </div>
 </nav>
