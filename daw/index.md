@@ -6,7 +6,7 @@ layout: main
 
 # Desarrollo de Aplicaciones Web
 
-#### [Módulo 1 - Programación Orientada a Objetos](/daw/m1/index)
+#### [Módulo 1 - Fundamentos de Programación](/daw/m1/index)
 
 * Semana 1 - Fundamentos de JavaScript
 * Semana 2 - Pensamiento Algorítmico
