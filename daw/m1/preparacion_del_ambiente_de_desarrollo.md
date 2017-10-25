@@ -23,11 +23,17 @@ Selecciona las instrucciones dependiendo de tu sistema operativo:
 
 Antes de instalar **Node.js**, tenemos que instalar dos aplicaciones, **XCode** y **Homebrew**.
 
-#### Paso 1: Instalar XCode
+#### Paso 1: Instalar XCode Command Line Tools
 
 **XCode** es el software de desarrollo de Apple. Este software se utiliza para desarrollar aplicaciones en las plataformas de Apple como macOS, iOS, tvOS y watchOS. Sin embargo, aunque nosotros no vamos a utilizarlo para desarrollar aplicaciones de Apple, XCode incluye herramientas que nos permiten compilar los programas que desarrollemos en Node.js en tu computadora.
 
-Puedes descargar XCode [aquí](https://itunes.apple.com/us/app/xcode/id497799835?mt=12#)
+Afortunadamente, no necesitamos instalar todo XCode para tener estas herramientas. Para instalar solamente las herramientas de la línea de commando de XCode (*XCode Command Line Tools* en inglés), escribe este comando en la terminal y presiona `Enter`:
+
+```bash
+$ xcode-select --install
+```
+
+Después de hacer esto, te aparecerá un diálogo en tu computadora. Sigue las instrucciones en pantalla y espera a que el programa se termine de instalar.
 
 #### Paso 2: Instalar Homebrew
 

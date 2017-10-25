@@ -332,7 +332,7 @@ $ git branch -d 'nuevo'
 Deleted branch nuevo (was d1facae).
 ```
 
-> Existen dos maneras de borrar un *branch*. Uno es más segura que la otra. Si quieres borrar un *branch* sólo si los cambios de ese *branch* han sido unidos, usa este comando `git branch -d <nombre del branch>`. Si quieres borrar un *branch* sin importar si los cambios han sido unidos, usa este comando `git branch -D <nombre del branch`.
+> Existen dos maneras de borrar un *branch*. Uno es más segura que la otra. Si quieres borrar un *branch* sólo si los cambios de ese *branch* han sido unidos, usa este comando `git branch -d <nombre del branch>`. Si quieres borrar un *branch* sin importar si los cambios han sido unidos, usa este comando `git branch -D <nombre del branch>`.
 
 #### Ejercicio
 

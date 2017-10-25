@@ -12,7 +12,7 @@ Semana 1 - Fundamentos de JavaScript
 * [Preparación del Ambiente de Desarrollo](/daw/m1/preparacion_del_ambiente_de_desarrollo)
 * [Introducción a Git](/daw/m1/introduccion_a_git)
 * [Introducción a Github](/daw/m1/introduccion_a_github)
-* [Introducción a JavaScript](/daw/m1/intro_to_javascript)
+* [Introducción a JavaScript](/daw/m1/introduccion_a_javascript)
 
 Semana 2 - Pensamiento Algorítmico
 
