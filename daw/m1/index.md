@@ -15,10 +15,5 @@ Semana 1 - Fundamentos de JavaScript
 * [Introducción a JavaScript](/daw/m1/introduccion_a_javascript)
 
 Semana 2 - Pensamiento Algorítmico
-
-* [Environment Setup](/daw/m1/environment_setup)
-* [Intro to Git](/daw/m1/intro_to_git)
-* [Intro to JavaScript](/daw/m1/intro_to_javascript)
-
 Semana 3 - Datos Relacionales
 Semana 4 - Express
