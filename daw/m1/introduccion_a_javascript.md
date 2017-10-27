@@ -438,3 +438,100 @@ Para practicar lo que hemos visto, haz lo siguiente:
 2. En el archivo `MiEdad.js` escribe un programa que tenga dos variables, una para tu año de nacimiento y otra para el año actual.
 3. El programa debe calcular tu edad actual restando las dos variables.
 4. Al ejecutar tu programa desde tu terminal, el programa debe imprimir `"Tengo <tus años> años."`.
+
+### IX. Funciones
+
+Las **funciones** son los bloques fundamentales con los que construímos nuestros programas en *JS*. Éstas contienen un grupo de *statementes* que le indican a nuestra computadora que instrucciones seguir. Además, las funciones nos permiten crear bloques de código que podemos usar en varios lugares en nuestros programas.
+
+#### Estructura de Una Función
+
+Para definir una función, nosotros usamos *function statements*. Estos tienen los siguientes elementos:
+
+* El *keyword* **function**.
+* El nombre de la función.
+* Una lista de los parámetros de la función, encerrados en paréntesis y separados por comas. Estos son opcionales.
+* Los *statementes* que definen la función, encerrados en llaves, `{}`.
+
+Una función sencilla se ve de este modo:
+
+```js
+function comerHelado(miHeladoFavorito, miHeladeriaFavorita) {
+  return `Me gusta comer helado de ${miHeladoFavorito} de ${miHeladeriaFavorita}.`;
+}
+```
+
+En este ejemplo, tenemos un *function statement* que declara una función llamada `comerHelado()`, que acepta dos parámetros `miHeladoFavorito` y `miHeladeriaFavorita`, y que retorna un *template string* que incluye un mensaje con ambas variables.
+
+> En *JavaScript*, si queremos que la función retorne un valor al terminar de ejecutarse, debemos de utilizar el *keyword* **return**. De lo contrario, el valor de retorno de nuestra función será *undefined*.
+
+Para ver como funciona este ejemplo, abre tu archivo `MiPrograma.js` con tu editor de texto, borra el código anterior y escribe este código nuevo:
+
+```js
+function comerHelado(miHeladoFavorito, miHeladeriaFavorita) {
+  return `Me gusta comer helado de ${miHeladoFavorito} de ${miHeladeriaFavorita}.`;
+}
+
+var helado    = 'chocolate';
+var heladeria = 'Coldstone';
+
+var mensaje = comerHelado(helado, heladeria);
+
+console.log(mensaje);
+```
+
+Ahora en tu terminal, ejecuta este programa con el siguiente comando:
+
+```bash
+$ node MiPrograma.js
+Me gusta comer helado de chocolate de Coldstone.
+```
+
+Veamos lo que acabamos de hacer en nuestro programa:
+
+1. Hemos declarado la función `comerHelado()`, la cuál acepta dos parámetros y retorna un mensaje.
+2. Hemos declarado dos variables, `helado` y `heladeria`, y les hemos asignado un valor a cada una.
+3. Hemos creado la variable `mensaje` y le hemos asignado el valor de retorno de nuestra función `comerHelado()`.
+4. Por último, hemos impreso el contenido de nuestra variable `mensaje` en nuestra terminal, usando `console.log()`.
+
+> `console.log()` es una instrucción que utilizamos con frecuencia para imprimir valores en nuestra terminal. `log()` es la función del objeto `console` que nos permite hacer esto. En *Node*, `console` es la terminal, en tu navegador `console`, es la consola de tu navegador. Puedes aprender más de esto [aquí](https://developer.mozilla.org/en-US/docs/Web/API/Console).
+
+Para seguir practicando, vamos a crear una función que nos permita calcular cuánto dejar de propina en un restaurante:
+
+```js
+function calcularPropina(totalDeCuenta, porcentajeDePropina) {
+  return (totalDeCuenta * porcentajeDePropina) / 100;
+}
+```
+
+Borra los contenidos de tu archivo de `MiPrograma.js` y vamos a escribir un programa nuevo:
+
+```js
+function calcularPropina(totalDeCuenta, porcentajeDePropina) {
+  return (totalDeCuenta * porcentajeDePropina) / 100;
+}
+
+var total      = 567;
+var porcentaje = 15;
+
+var propina = calcularPropina(total, porcentaje);
+
+console.log(`La propina a pagar es ${propina} pesos.`);
+```
+
+En el ejemplo anterior:
+
+1. Declaramos la función `calcularPropina()`, la cuál acepta dos parámetros, `totalDeCuenta` y `porcentajeDePropina`.
+2. Establecemos que el valor de retorno de la función sea una operación donde calculamos la propina.
+3. Declaramos dos variables, `total` y `porcentaje`, y les asignamos un valor.
+4. Ejecutamos la función `calcularPropina()` con dos argumentos, `total` y `porcentaje`, y guardamos su valor de retorno en la variable `propina`.
+5. Usamos `console.log()` para imprimir un mensaje.
+
+> Los **parámetros** son las variables que declaramos junto al nombre de la función en un *function declaration*. Cuándo *llamamos* a esa función en nuestro código, los *argumentos* son los datos que asignamos a los *parámetros*.
+
+#### Ejercicio
+
+1. Crea un archivo en tu terminal llamado `areaDeRectangulo.js`.
+2. Abre el archivo y define una función `calcularAreaDeRectangulo()` que acepta dos parámetros `base` y `altura`.
+3. Escribe el código que calcula la operación.
+4. Llama a la función `calcularAreaDeRectangulo()` con dos argumentos.
+4. Al ejecutar tu programa en la terminal, este deberá mostrar un mensaje que diga `El área del rectangulo es <valor>`.
