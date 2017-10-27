@@ -15,5 +15,7 @@ Semana 1 - Fundamentos de JavaScript
 * [Introducción a JavaScript](/daw/m1/introduccion_a_javascript)
 
 Semana 2 - Pensamiento Algorítmico
+
 Semana 3 - Datos Relacionales
+
 Semana 4 - Express
