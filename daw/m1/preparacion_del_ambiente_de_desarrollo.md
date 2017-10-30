@@ -25,7 +25,7 @@ Antes de instalar **Node.js**, tenemos que instalar dos aplicaciones, **XCode** 
 
 #### Paso 1: Instalar XCode Command Line Tools
 
-**XCode** es el software de desarrollo de Apple. Este software se utiliza para desarrollar aplicaciones en las plataformas de Apple como macOS, iOS, tvOS y watchOS. Sin embargo, aunque nosotros no vamos a utilizarlo para desarrollar aplicaciones de Apple, XCode incluye herramientas que nos permiten compilar los programas que desarrollemos en Node.js en tu computadora.
+**XCode** es el software de desarrollo de Apple. Este software se utiliza para desarrollar aplicaciones en las plataformas de Apple como macOS, iOS, tvOS y watchOS. Sin embargo, aunque nosotros no vamos a utilizarlo para desarrollar aplicaciones de Apple, XCode incluye herramientas que nos permiten compilar los programas que desarrollemos en **Node.js** en tu computadora.
 
 Afortunadamente, no necesitamos instalar todo XCode para tener estas herramientas. Para instalar solamente las herramientas de la línea de commando de XCode (*XCode Command Line Tools* en inglés), escribe este comando en la terminal y presiona `Enter`:
 
@@ -45,12 +45,34 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 Después de hacer esto, sigue las instrucciones en la pantalla de tu terminal.
 
-#### Paso 3: Instalar Node.js
+#### Paso 3: Instalar NVM
 
-Una vez instalado Homebrew instalar **Node.js** es bastante fácil. Sólo escribe el siguiente comando en tu terminal y presiona `Enter`:
+Una vez instalado **Homebrew**, vamos a instalar **Node.js** usando **NVM** (por *Node Version Manager* por sus siglas en inglés). **NVM** nos permite administrar diferentes versiones de **Node.js** en nuestro sistema dependiendo de nuestro proyecto. Para instalarlo, escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
-$ brew install node
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+```
+
+Una vez hecho esto, vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
+
+```bash
+$ nvm
+```
+
+Si ves una lista de comandos disponibles para **NVM**, la instalación ha funcionado.
+
+#### Paso 4: Instalar **Node.js**
+
+Ahora vamos a instalar **Node.js**. Primero hay que ver cuál es la última versión de **Node.js**. Para hacer esto, escribe el siguiente comando en tu terminal y presiona `Enter`:
+
+```bash
+$ nvm ls-remote
+```
+
+Una vez que ya encontraste la versión que deseas instalar, escribe el siguiente comando en tu terminal y presiona `Enter`. Cambia `<version>` por la versión que quieras instalar:
+
+```bash
+$ nvm install <version> --latest-npm
 ```
 
 Para comprobar que hayas instalado todo correctamente, primero tenemos que recargar la sesión de la terminal. Para hacer esto escribe el siguiente comando en tu terminal y presiona `Enter`:
@@ -67,20 +89,14 @@ $ node -v
 
 Esto imprime el número de versión de Node en la terminal. Si esto funciona, has instalado correctamente Node.
 
-Por último, vamos a verificar que NPM se haya instalado correctamente. NPM es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
+Por último, vamos a verificar que **NPM** se haya instalado correctamente. **NPM** es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
 $ npm -v
 ```
 
-Este comando imprime el número de versión de NPM en la terminal. Si esto funciona, NPM se ha instalado correctamente.
+Este comando imprime el número de versión de **NPM** en la terminal. Si esto funciona, **NPM** se ha instalado correctamente.
 
-Para asegurarte de que Node.js siempre esté actualizado, escribe estos comandos y presiona `Enter`:
-
-```bash
-$ brew update
-$ brew upgrade node
-```
 
 ### <a name='ubuntu'></a> Ubuntu
 
@@ -133,12 +149,34 @@ Después de hacer esto tenemos que recargar la sesión de tu terminal. Para hace
 $ . ~/.bash_profile
 ```
 
-#### Paso 3: Instalar Node.js
+#### Paso 3: Instalar NVM
 
-Una vez instalado Linuxbrew instalar **Node.js** es bastante fácil. Sólo escribe el siguiente comando en tu terminal y presiona `Enter`:
+Una vez instalado **Homebrew**, vamos a instalar **Node.js** usando **NVM** (por *Node Version Manager* por sus siglas en inglés). **NVM** nos permite administrar diferentes versiones de **Node.js** en nuestro sistema dependiendo de nuestro proyecto. Para instalarlo, escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
-$ brew install node
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+```
+
+Una vez hecho esto, vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
+
+```bash
+$ nvm
+```
+
+Si ves una lista de comandos disponibles para **NVM**, la instalación ha funcionado.
+
+#### Paso 4: Instalar **Node.js**
+
+Ahora vamos a instalar **Node.js**. Primero hay que ver cuál es la última versión de **Node.js**. Para hacer esto, escribe el siguiente comando en tu terminal y presiona `Enter`:
+
+```bash
+$ nvm ls-remote
+```
+
+Una vez que ya encontraste la versión que deseas instalar, escribe el siguiente comando en tu terminal y presiona `Enter`. Cambia `<version>` por la versión que quieras instalar:
+
+```bash
+$ nvm install <version> --latest-npm
 ```
 
 Para comprobar que hayas instalado todo correctamente, primero tenemos que recargar la sesión de la terminal. Para hacer esto escribe el siguiente comando en tu terminal y presiona `Enter`:
@@ -155,15 +193,15 @@ $ node -v
 
 Esto imprime el número de versión de Node en la terminal. Si esto funciona, has instalado correctamente Node.
 
-Por último, vamos a verificar que NPM se haya instalado correctamente. NPM es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
+Por último, vamos a verificar que **NPM** se haya instalado correctamente. **NPM** es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
 $ npm -v
 ```
 
-Este comando imprime el número de versión de NPM en la terminal. Si esto funciona, NPM se ha instalado correctamente.
+Este comando imprime el número de versión de **NPM** en la terminal. Si esto funciona, **NPM** se ha instalado correctamente.
 
-Para asegurarte de que Node.js siempre esté actualizado, escribe estos comandos y presiona `Enter`:
+Para asegurarte de que **Node.js** siempre esté actualizado, escribe estos comandos y presiona `Enter`:
 
 ```bash
 $ brew update
@@ -182,12 +220,12 @@ C:\> node -v
 
 Esto imprime el número de versión de Node en la terminal. Si esto funciona, has instalado correctamente Node.
 
-Por último, vamos a verificar que NPM se haya instalado correctamente. NPM es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
+Por último, vamos a verificar que **NPM** se haya instalado correctamente. **NPM** es el sistema de Node que permite manejar dependencias (librerías externas programadas por otros desarrolladores que nos facilitan el trabajo). Escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
 C:\> npm -v
 ```
 
-Este comando imprime el número de versión de NPM en la terminal. Si esto funciona, NPM se ha instalado correctamente.
+Este comando imprime el número de versión de **NPM** en la terminal. Si esto funciona, **NPM** se ha instalado correctamente.
 
-Para asegurarte de que Node.js siempre esté actualizado, asegúrate de visitar la [página de Node.js](https://nodejs.org/es/) y descarga el instalador con la última versión.
+Para asegurarte de que **Node.js** siempre esté actualizado, asegúrate de visitar la [página de Node.js](https://nodejs.org/es/) y descarga el instalador con la última versión.
