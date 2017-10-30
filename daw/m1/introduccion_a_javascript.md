@@ -97,7 +97,7 @@ true
 false
 ```
 
-Nosotros usamos los *booleans* para controlar el que código ejecutar en un programa. A este proceso se le llama *control flow* (o *control de flujo* en español).
+Nosotros usamos los *booleans* para controlar que código ejecutar en un programa. A este proceso se le llama *control flow* (o *control de flujo* en español).
 
 #### Null y Undefined
 
@@ -264,7 +264,7 @@ En tu *REPL* escribe las siguientes expresiones:
 
 ```js
 2 + 2;
-2
+4
 
 'Ada';
 'Ada'
@@ -342,7 +342,6 @@ if (expression) {
 Si la expresión regresa el valor de `true`, es decir, si evalúa a `true`, entonces el *statement* de esta condición se ejecutará. De lo contrario, si la expresión evalúa a `false`, la sentencia no se ejecutará.
 
 Usualmente, la expresión del condicional tiene un operador lógico para realizar una comparación que evalúa a `falso` o `verdadero`.
-
 
 Algunos ejemplos de expresiones que podemos usar para una condicional son los siguientes:
 
