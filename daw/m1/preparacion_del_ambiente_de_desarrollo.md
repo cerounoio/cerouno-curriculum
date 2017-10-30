@@ -53,7 +53,13 @@ Una vez instalado **Homebrew**, vamos a instalar **Node.js** usando **NVM** (por
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 ```
 
-Una vez hecho esto, vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
+Después de hacer esto, tenemos que recargar la sesión de tu terminal. Para hacer esto, en tu terminal, escribe este comando y presiona `Enter`:
+
+```bash
+$ . ~/.bash_profile
+```
+
+Ahora vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
 $ nvm
@@ -157,7 +163,13 @@ Una vez instalado **Homebrew**, vamos a instalar **Node.js** usando **NVM** (por
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 ```
 
-Una vez hecho esto, vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
+Después de hacer esto, tenemos que recargar la sesión de tu terminal. Para hacer esto, en tu terminal, escribe este comando y presiona `Enter`:
+
+```bash
+$ . ~/.bash_profile
+```
+
+Ahora vamos a verificar que **NVM** se haya instalado correctamente. Escribe el siguiente comando en tu terminal y presiona `Enter`:
 
 ```bash
 $ nvm
