@@ -13,7 +13,9 @@ Después de esta lección, los estudiantes podrán:
 
 * Entender la importancia de la terminal
 * Sentirse cómodos con la estructura de directorios y archivos
+* Listar archivos y directorios
 * Crear, copiar, mover y borrar archivos en la terminal
+* Navegar en la estructura de directorios y archivos desde la terminal
 
 ### II. ¿Por Qué es Importante usar la Terminal?
 
