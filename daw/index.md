@@ -9,20 +9,20 @@ layout: main
 #### [Módulo 1 - Fundamentos de Programación](/daw/m1/index)
 
 * Semana 1 - Fundamentos de JavaScript
-* Semana 2 - Pensamiento Algorítmico
-* Semana 3 - Datos Relacionales
-* Semana 4 - Express
+* Semana 2 - Programación Orientada a Objetos
+* Semana 3 - Tecnologías Web
+* Semana 4 - Bases de Datos
 
 #### [Módulo 2 - Desarrollo de Aplicaciones Web](/daw/m2/index)
 
-* Semana 1 - Pendiente
-* Semana 2 - Pendiente
-* Semana 3 - APIs
+* Semana 1 - Autenticación / Seguridad
+* Semana 2 - Consumo de APIs
+* Semana 3 - Producción de APIs
 * Semana 4 - jQuery / Ajax
 
 #### [Módulo 3 - Desarrollo Client-Side](/daw/m3/index)
 
-* Semana 1 - React
-* Semana 2 - Object-Oriented JS
-* Semana 3 - Personal Project
-* Semana 4 - Personal Project
+* Semana 1 - Fundamentos de React
+* Semana 2 - JSX
+* Semana 3 - Redux
+* Semana 4 - Firebase
