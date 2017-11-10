@@ -538,8 +538,8 @@ En tu archivo `index.js`, vamos a importar la clase `Dog` y la clase `Cat`:
 
 ```js
 // Aquí importamos las clases *Dog* y *Cat, y las asignamos a las constantes *Dog* y *Cat*.
-const Dog = require('./Dog.js')
-const Cat = require('./Cat.js')
+const Dog = require('./Dog.js');
+const Cat = require('./Cat.js');
 
 var myDog = new Dog('café', 4);
 console.log(`El color de mi animal es ${myDog.color}.`);
@@ -582,7 +582,7 @@ Vamos arreglar esto importando la clase `Animal` en las clases `Dog` y `Cat`.
 
 ```js
 // Aquí importamos la clase *Animal*
-const Animal = require('./Animal.js')
+const Animal = require('./Animal.js');
 
 class Dog extends Animal {
   fetch(item) {
@@ -601,7 +601,7 @@ module.exports = Dog;
 
 ```js
 // Aquí importamos la clase *Animal*
-const Animal = require('./Animal.js')
+const Animal = require('./Animal.js');
 
 class Cat extends Animal {
   scratch() {
@@ -676,7 +676,7 @@ Para agregar el atributo `hungry` en la clase `Dog`, sin eliminar la funcionalid
 En tu archivo `Dog.js`, escribe el siguiente código:
 
 ```js
-const Animal = require('./Animal.js')
+const Animal = require('./Animal.js');
 
 class Dog extends Animal {
   constructor(color, legs, size) {
@@ -714,8 +714,8 @@ Ya que tenemos nuestra funcionalidad lista, vamos a borrar los contenidos de nue
 ```js
 // Aquí requerimos las clases que definimos en otros archivos
 // y las guardamos en constantes
-const Dog = require('./Dog.js')
-const Person = require('./Person.js')
+const Dog = require('./Dog.js');
+const Person = require('./Person.js');
 
 // Aquí estamos creando instancias de las clases `Dog` y `Person`
 // y las guardamos en las variables `myDog` y `myPerson`
