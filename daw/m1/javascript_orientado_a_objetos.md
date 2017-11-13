@@ -640,104 +640,203 @@ Ya que hemos reorganizado nuestro programa, vamos a crear una clase llamada `Bir
 3. Declara un método `fly()` en la clase `Bird` que retorne un *string* con el valor `Estoy volando.`
 4. Crea una instancia de la clase Bird en tu programa en `index.js`, guárdala en una variable `myBird` e imprime el valor de retorno del método `fly()`.
 
+### VI. Agregando Comportamiento
+
+Hasta ahora hemos creado métodos en nuestros objetos que retornan *strings*. Vamos a hacer algo más complicado para que puedas entender como utilizamos los métodos.
+
+Los métodos son funciones definidas dentro de objetos y especifican acciones que los objetos realizan. Por ejemplo, el objeto `Fish` puede tener un método `swim()` que contiene las instrucciones para que el objeto pueda nadar.
+
+Para ejemplificar esto, vamos a crear un objeto `Pig`. Este objeto va a heredar los atributos iniciales de la clase `Animal` y un atributo adicional llamado `hungry`. Al crear un objeto `Pig`, este va a tener hambre, por lo que el valor de su atributo inicial `hungry` va a ser `true`. Cuando le digamos a `Pig` que coma, este valor va a ser `false`.
+
+En tu terminal crea un archivo `Pig.js` ejecutando el siguiente comando:
+
+```bash
+$ touch Pig.js
+```
+
+Ahora abre el archivo `Pig.js` en tu editor, y escribe el siguiente código:
+
+```js
+const Animal = require('./Animal.js')
+
+class Pig extends Animal {
+  // Aquí redefinimos el constructor para poder agregar el atributo *hungry*
+  constructor(color, legs, size) {
+    this.color  = color;
+    this.legs   = legs;
+    this.size   = size;
+    // Aquí creamos el nuevo atributo *hungry* con un valor inicial de *true*
+    this.hungry = true;
+  }
+
+  // Aquí redefinimos el método *eat()* para poder agregar la instrucción que
+  // cambia de valor el atributo hungry
+  eat(food) {
+    // Aquí cambiamos el valor del atributo *hungry* a *false*
+    this.hungry = false;
+    return `Estoy comiendo ${food}.`;
+  }
+}
+
+module.exports = Pig;
+```
+
+Una vez implementado esto, en nuestro index.js, vamos a agregar el siguiente código:
+
+```js
+const Dog = require('./Dog.js');
+const Cat = require('./Cat.js');
+// Aquí agregamos la nueva clase *Pig* para poderla usar en nuestro programa
+const Pig = require('./Pig.js');
+
+var myDog = new Dog('café', 4);
+console.log(`El color de mi animal es ${myDog.color}.`);
+console.log(`Mi animal tiene ${myDog.legs} patas.`);
+console.log(myDog.eat('croquetas'));
+console.log(myDog.jump('pasto'));
+console.log(myDog.fetch('hueso'));
+
+var myCat = new Cat('negro', 4, 'grande');
+console.log(myCat.scratch());
+console.log(myCat.eat());
+
+// Aquí creamos un nuevo objeto *Pig*
+var myPig = new Pig('rosa', 4, 'mediano');
+// Aquí imprimimos el valor de *hungry* para ver su estado inicial
+console.log(myPig.hungry);
+// Aquí llamamos el método *eat()* y pasamos un argumento *maíz*
+console.log(myPig.eat('maíz'));
+// Aquí imprimimos el valor de *hungry* para ver el nuevo estado después de
+// llamar a nuestro método *eat()*
+console.log(myPig.hungry);
+```
+
+Ahora ejecuta el programa desde tu terminal:
+
+```bash
+$ node index.js
+El color de mi animal es café.
+Mi animal tiene 4 patas.
+Estoy comiendo croquetas.
+No quiero brincar.
+Estoy trayendo un hueso.
+Te estoy rasguñando.
+Quiero atún.
+true
+Estoy comiendo maíz.
+false
+```
+
+Por último podemos mejorar un poco nuestro código. Si te das cuenta, cuando redefinimos nuestro constructor en la clase `Pig`, realmente estamos reescribiendo el código del constructor de la clase `Animal`. Para evitar esto, podemos utilizar la función `super()`. Esta nos permite acceder a la funcionalidad de la clase madre, en este caso `Animal`, para evitar tener que reescribir el código.
+
+En tu clase `Pig`, escribe lo siguiente:
+
+```js
+const Animal = require('./Animal.js')
+
+class Pig extends Animal {
+  constructor(color, legs, size) {
+    // Aquí llamamos al constructor de la clase madre `Animal`
+    super(color, legs, size);
+    this.hungry = true;
+  }
+
+  eat(food) {
+    this.hungry = false;
+    // Aquí llamamos al método `eat()` de la clase madre `Animal`
+    return super.eat(food);
+  }
+}
+
+module.exports = Pig;
+```
+
 ### VI. Interactuando Entre Objetos
 
 Ahora, vamos a ver como dos objetos interactúan entre sí. En la programación orientada a objetos, dado que nuestro objetos encapsulan diferentes partes de nuestros programas, es normal que estos interactúen entre ellos.
 
-Para ejemplificar lo anterior, vamos a agregar un objeto `Person` a nuestro programa. Este objeto tiene la responsabilidad de alimentar al objeto `Dog`. Cuando el objeto `Dog` se crea, este tiene hambre, pero después de que el objeto `Person` lo alimenta, el objeto `Dog` ya no tiene hambre.
-
-Primero, vamos a crear un archivo `Person.js` donde vamos a declarar nuestra clase `Person`. Esta clase nos permitirá crear muchos objetos `Person`.
-
-En tu terminal, ejecuta el siguiente comando:
+Para ejemplificar lo anterior, vamos a agregar un objeto `Person` a nuestro programa. Este objeto tiene la responsabilidad de alimentar al objeto `Pig`. Primero, vamos a crear un archivo `Person.js` donde vamos a declarar nuestra clase `Person`. En tu terminal, ejecuta el siguiente comando:
 
 ```bash
 $ touch Person.js
 ```
 
-Ahora, vamos a declarar nuestra clase, declarar un método `feed()` que acepte un objeto `animal` de argumento. Después, vamos a exportar la funcionalidad de nuestra clase.
+Ahora, vamos a declarar nuestra clase, declarar un método `feed()` que acepte un objeto `animal` y un *string* `food`.
 
 El archivo `Person.js`, escribe el siguiente código:
 
 ```js
+
 class Person {
-  // Aquí definimos un método *feed()* que acepta un objeto animal e // invoca su método *eat()*
-  feed(animal) {
-    return animal.eat('carne');
+  // Aquí definimos un método *feed()* que acepta un objeto *animal* y
+  // un string *food*
+  feed(animal, food) {
+    // Aquí llamamos el método *eat()* en el objeto *animal* y le pasamos
+    // el argumento *food*
+    return animal.eat(food);
   }
 }
 // Aquí exportamos la clase *Person* para que otros archivos puedan usarla
 module.exports = Person;
 ```
 
-Una vez hecho esto, vamos a modificar nuestra clase `Dog` para que tenga un atributo que le indique el estado de su hambre. También vamos a modificar el método `eat()` para que el objeto pueda cambiar su estado de hambre e indicar que está satisfecho.
+Una vez hecho esto, ahora vamos a modificar nuestro programa para que `Person` alimente a `Pig`.
 
-Para agregar el atributo `hungry` en la clase `Dog`, sin eliminar la funcionalidad que heredamos, tenemos que usar el keyword `super`. Este nos permite acceder a la funcionalidad de la clase madre `Animal`.
-
-En tu archivo `Dog.js`, escribe el siguiente código:
+En tu archivo `index.js` escribe el siguiente código:
 
 ```js
-const Animal = require('./Animal.js');
-
-class Dog extends Animal {
-  constructor(color, legs, size) {
-    // Aquí estamos accediendo al constructor de la clase madre para
-    // no eliminar sus atributos en el constructor de la subclase.
-    super(color, legs, size);
-    // Aquí agregamos nuestro nuevo atributo *hungry* y
-    // le asignamos el valor *true*
-    this.hungry = true;
-  }
-
-  eat(food) {
-    // Aquí estamos cambiando el atributo hungry a `false`
-    // cuando el método `eat()` es invocado.
-    this.hungry = false;
-    // Aquí usamos `super` para invocar el método *eat()* de la
-    // clase madre *Animal* y mantener la funcionalidad que habíamos heredado.
-    return super.eat(food);
-  }
-
-  fetch(item) {
-    return `Estoy trayendo un ${item}.`;
-  }
-
-  jump() {
-    return 'No quiero brincar.';
-  }
-}
-
-module.exports = Dog;
-```
-
-Ya que tenemos nuestra funcionalidad lista, vamos a borrar los contenidos de nuestro archivo `index.js` y vamos a escribir el siguiente código:
-
-```js
-// Aquí requerimos las clases que definimos en otros archivos
-// y las guardamos en constantes
-const Dog = require('./Dog.js');
+const Dog    = require('./Dog.js');
+const Cat    = require('./Cat.js');
+const Pig    = require('./Pig.js');
+// Aquí estamos importando la clase *Person*
 const Person = require('./Person.js');
 
-// Aquí estamos creando instancias de las clases `Dog` y `Person`
-// y las guardamos en las variables `myDog` y `myPerson`
-var myDog    = new Dog('café', 4, 'pequeño');
-var myPerson = new Person();
+var myDog = new Dog('café', 4);
+console.log(`El color de mi animal es ${myDog.color}.`);
+console.log(`Mi animal tiene ${myDog.legs} patas.`);
+console.log(myDog.eat('croquetas'));
+console.log(myDog.jump('pasto'));
+console.log(myDog.fetch('hueso'));
 
-// Aquí imprimos el valor inicial del atributo *hungry* de la
-// instancia myDog y vemos que es *false*
-console.log(myDog.hungry);
-// Aquí la instancia *myPerson* alimenta a la instancia *myDog* y cambia el valor de su atributo *hungry* de *true* a *false*
-console.log(myPerson.feed(myDog));
-// Aquí imprimos el valor final del atributo *hungry* de la
-// instancia myDog y vemos que es *true*
-console.log(myDog.hungry);
+var myCat = new Cat('negro', 4, 'grande');
+console.log(myCat.scratch());
+console.log(myCat.eat());
+
+var myPig = new Pig('rosa', 4, 'mediano');
+console.log(myPig.hungry);
+console.log(myPig.eat('maíz'));
+console.log(myPig.hungry);
+
+// Aquí creamos un objeto *Person*
+var myPerson = new Person();
+// Aquí creamos otro objeto *Pig*
+var myOtherPig = new Pig('café', 4, 'grande');
+// Aquí imprimimos el valor inicial del atributo hungry de *Pig*
+console.log(myOtherPig.hungry);
+// Aquí llamamos el método *feed()* de la clase *Person* y le pasamos
+// como argumentos el objeto *myOtherPig* y el string *alimento*
+console.log(myPerson.feed(myOtherPig, 'alimento'));
+// Aquí imprimos el valor del atributo *hungry* de *myOtherPig*
+// y vemos que cambió
+console.log(myOtherPig.hungry);
 ```
 
 Ahora ejecuta tu programa en la terminal:
 
 ```bash
 $ node index.js
+El color de mi animal es café.
+Mi animal tiene 4 patas.
+Estoy comiendo croquetas.
+No quiero brincar.
+Estoy trayendo un hueso.
+Te estoy rasguñando.
+Quiero atún.
 true
-Estoy comiendo carne.
+Estoy comiendo maíz.
+false
+true
+Estoy comiendo alimento.
 false
 ```
 
@@ -745,13 +844,12 @@ false
 
 Ya que sabes como crear clases e interactuar con ellas, vamos a hacer lo siguiente:
 
-1. Crea una clase `Pig` que herede su funcionalidad de la clase `Animal`.
-2. Agrega un atributo `thirsty` a la clase `Pig` sin borrar la funcionalidad del constructor de la clase madre `Animal`. Cuando una instancia nueva de `Pig` se cree, el valor del atributo `thirsty` será `true`.
-3. Agrega un método `drink()` en la clase `Pig` que cambie el atributo `thirsty` de `true` a `false`. El valor de retorno deberá ser un string que diga "Estoy tomando agua.".
-4. Declara un método `water()` en la clase `Person` que tenga un parámetro `animal`. En este método, `Person` deberá retornar el valor de `animal.drink()`.
-5. En `index.js` implementa un programa que importe la clase `Person` y la clase `Pig`. Este programa deberá crear una instancia de cada clase respectivamente.
-6. El programa deberá imprimir el estado inicial del atributo `thirsty` de la instancia de la clase `Pig`.
-7. Después, el programa invocar el método `water()` en la instancia de la clase `Person` y pasar a la instancia de la clase `Pig` como argumento. El resultado de esta expresión se deberá imprimirse en la terminal.
-8. Por último, imprime el valor del atributo `thirsty` de la instancia de la clase `Pig` en la terminal de nuevo. Este deberá haber cambiado de `true` a `false`.
+1. Agrega un atributo `thirsty` a la clase `Pig`. Cuando una instancia nueva de `Pig` se cree, el valor del atributo `thirsty` será `true`.
+3. En la clase `Pig`, agrega un método `drink()` que cambie el atributo `thirsty` a `false` y que retorne un string que diga "Estoy tomando agua.".
+4. En la clase `Person`, agrega un método `water()` que acepte un parámetro `animal` y que retorne el valor de `animal.drink()`.
+5. En `index.js`, crea dos nuevas instancias de las clases `Person` y `Pig`.
+6. Imprime el estado inicial del atributo `thirsty` de la nueva instancia de `Pig`.
+7. Llama el método `water()` en la nueva instancia de `Person` y pasa la nueva instancia de `Pig` como argumento. Imprime el valor de retorno.
+8. Imprime el estado del atributo `thirsdy` de la nueva instancia de `Pig` de nuevo. Este debió de haber cambiado de `true` a `false`.
 
 Ahora ya sabes como programar usando objetos. Practica creando clases adicionales que se comuniquen entre sí. No olvides de compartir tu programa en Github.

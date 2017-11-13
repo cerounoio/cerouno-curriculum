@@ -45,7 +45,7 @@ Después de esta semana, los estudiantes podrán:
 #### Lecciones
 
 * [JavaScript Orientado a Objetos](/daw/m1/javascript_orientado_a_objetos)
-* Introducción a TDD
+* [Introducción a TDD](/daw/m1/introduccion_a_tdd)
 
 #### Proyectos
 
