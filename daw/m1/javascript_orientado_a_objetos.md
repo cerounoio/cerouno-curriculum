@@ -751,7 +751,7 @@ class Pig extends Animal {
 module.exports = Pig;
 ```
 
-### VI. Interactuando Entre Objetos
+### VII. Interactuando Entre Objetos
 
 Ahora, vamos a ver como dos objetos interactúan entre sí. En la programación orientada a objetos, dado que nuestro objetos encapsulan diferentes partes de nuestros programas, es normal que estos interactúen entre ellos.
 
