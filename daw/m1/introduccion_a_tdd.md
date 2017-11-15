@@ -274,6 +274,7 @@ describe('Horse', function(){
     // Aquí esperamos que el atributo *breed* sea igual a *pura sangre*
     expect(horse.breed).to.equal('pura sangre');
   }
+})
 ```
 
 Ahora, ejecuta en tu terminal el siguiente comando:
