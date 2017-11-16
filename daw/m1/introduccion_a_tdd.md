@@ -925,3 +925,5 @@ Vamos a agregar un método `eat()` a nuestra clase `Horse`. Cuando el objeto `Ho
 6. Implementa la funcionalidad anterior en `Horse.js`, corre tus pruebas en la terminal, y verifica que tu prueba esté pasando.
 7. Por último, en `HorseSpec.js`, escribe una prueba de integración que pruebe si el atributo `hungry` es `false` después de que el método `eat()` sea llamado cinco veces.
 8. Implementa la funcionalidad anterior en `Horse.js`, corre tus pruebas en la terminal, y verifica que tu prueba esté pasando.
+
+Ahora que ya sabes programar con la técnica de *TDD*, puedes practicar más completando estos ejercicios de [Criaturas Míticas](https://github.com/cerouno-examples/criaturas-miticas).
