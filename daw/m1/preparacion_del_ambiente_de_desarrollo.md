@@ -213,13 +213,6 @@ $ npm -v
 
 Este comando imprime el número de versión de **NPM** en la terminal. Si esto funciona, **NPM** se ha instalado correctamente.
 
-Para asegurarte de que **Node.js** siempre esté actualizado, escribe estos comandos y presiona `Enter`:
-
-```bash
-$ brew update
-$ brew upgrade node
-```
-
 ### <a name='windows'></a> Windows
 
 Instalar **Node.js** es muy fácil. Ve a la [página de Node.js](https://nodejs.org/es/) y descarga el instalador de Windows. Una vez descargado el archivo, corre el instalador, y sigue las instrucciones en pantalla. Por último, reinicia tu computadora para que puedas usar Node.js.
