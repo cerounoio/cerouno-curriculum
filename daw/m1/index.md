@@ -40,7 +40,7 @@ Después de esta semana, los estudiantes podrán:
 
 * Desarrollar programas usando *Object-Oriented Programming*
 * Usar *Test-Driven Development* para guiar su proceso de desarrollo
-* Entender callbacks, for loops, hoisting y scopes.
+* Entender *arrays*, *objects* y *loops*.
 
 #### Lecciones
 
