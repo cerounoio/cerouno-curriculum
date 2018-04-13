@@ -24,6 +24,8 @@ exclude: [
   'lessons/wad/m1/archive',
   'lessons/wad/m2/archive',
   'lessons/wad/m3/archive',
+  'config.ru',
+  'vendor'
 ]
 
 defaults:
