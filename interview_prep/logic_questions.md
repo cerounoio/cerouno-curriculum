@@ -15,11 +15,11 @@ Recomendamos que uses algo con que escribir.
 
 Después de su discurso, el público le hace a la Embajadora Iredu exactamente siete preguntas. Cada uno de los siete integrantes del público —Fowler, García, Hidayat, Lemke, Motyko, Royce y Santiago— hace una de esas preguntas, uno a la vez, de acuerdo con el siguiente protocolo:
 
-* Fowler hace su pregunta antes que García hace la suya.
-* Hidayat hace su pregunta antes que Royce hace la suya.
-* Lemke hace su pregunta antes que Motyko hace la suya.
-* Santiago hace su pregunta antes que Hidayat hace la suya.
-* Motyko hace su pregunta antes que García hace la suya.
+* Fowler hace su pregunta antes que García haga la suya.
+* Hidayat hace su pregunta antes que Royce haga la suya.
+* Lemke hace su pregunta antes que Motyko haga la suya.
+* Santiago hace su pregunta antes que Hidayat haga la suya.
+* Motyko hace su pregunta antes que García haga la suya.
 
 1. ¿Cuál de los siguientes puede ser el orden en que los siete integrantes del público hacen sus preguntas, del primero al último?
     1. Fowler, García, Santiago, Hidayat, Royce, Lemke, Motyko
@@ -36,11 +36,11 @@ Después de su discurso, el público le hace a la Embajadora Iredu exactamente s
     5. Santiago es el primer integrante del público que hace una pregunta.
 
 3. Si Lemke hace su pregunta antes de que Hidayat hace la suya, entonces ¿cuál de las siguientes tiene que ser cierta?
-    1. Fowler hace su pregunta antes de que Royce hace la suya.
-    2. Hidayat hace su pregunta antes de que García hace la suya.
-    3. Lemke hace su pregunta antes de que Royce hace la suya.
-    4. Santiago hace su pregunta antes de que Fowler hace la suya.
-    5. Santiago hace su pregunta antes de que García hace la suya.
+    1. Fowler hace su pregunta antes de que Royce haga la suya.
+    2. Hidayat hace su pregunta antes de que García haga la suya.
+    3. Lemke hace su pregunta antes de que Royce haga la suya.
+    4. Santiago hace su pregunta antes de que Fowler haga la suya.
+    5. Santiago hace su pregunta antes de que García haga la suya.
 
 4. Si García hace su pregunta antes de que Santiago hace la suya, entonces lo más tarde que Motyko puede hacer su pregunta es en el:
     1. segundo lugar
@@ -50,11 +50,11 @@ Después de su discurso, el público le hace a la Embajadora Iredu exactamente s
     5. sexto lugar
 
 5. ¿Hidayat tiene que hacer su pregunta antes de que Motyko haga la suya si cuál de las siguientes es cierta?
-    1. Fowler hace su pregunta antes de que Santiago hace la suya.
-    2. García hace su pregunta antes de que Santiago hace la suya.
-    3. Hidayat hace su pregunta antes de que Fowler hace la suya.
-    4. Lemke hace su pregunta antes de que Fowler hace la suya.
-    5. Royce hace su pregunta antes de que Lemke hace la suya.
+    1. Fowler hace su pregunta antes de que Santiago haga la suya.
+    2. García hace su pregunta antes de que Santiago haga la suya.
+    3. Hidayat hace su pregunta antes de que Fowler haga la suya.
+    4. Lemke hace su pregunta antes de que Fowler haga la suya.
+    5. Royce hace su pregunta antes de que Lemke haga la suya.
 
 6. Si Motyko hace su pregunta antes de que Fowler hace la suya, entonces lo más tarde que Lemke puede hacer su pregunta es en el:
     1. primer lugar
