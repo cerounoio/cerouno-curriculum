@@ -51,7 +51,7 @@ Ahora crea dos subdirectorios, `test` y `lib`. `test` es donde vamos a escribir 
 $ mkdir lib test
 ```
 
-Ya que tenemos la estructura de nuestro proyecto, ahora vamos a instalar **Mocha** y **Chai**. [Mocha](https://mochajs.org/) es un *test framework* de JavaScript, mientras que [Chai](http://chaijs.com/) nos permite tener una syntaxis más amigable para escribir nuestras prubas.
+Ya que tenemos la estructura de nuestro proyecto, ahora vamos a instalar **Mocha** y **Chai**. [Mocha](https://mochajs.org/) es un *test framework* de JavaScript, mientras que [Chai](https://chaijs.com/) nos permite tener una syntaxis más amigable para escribir nuestras prubas.
 
 Para instalar Mocha globalmente, ejecuta el siguiente comando en tu terminal:
 

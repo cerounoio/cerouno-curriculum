@@ -107,7 +107,7 @@ Nosotros usamos los *booleans* para controlar que código ejecutar en un program
 
 #### Símbolos
 
-Los símbolos (o *symbols* en inglés) son un tipo de datos especiales diseñados para servir como identificadores únicos o propiedades semiprivadas de objetos. Por el momento, ignora este tipo de datos. Si quieres saber más acerca de los símbolos haz click [aquí](http://exploringjs.com/es6/ch_symbols.html).
+Los símbolos (o *symbols* en inglés) son un tipo de datos especiales diseñados para servir como identificadores únicos o propiedades semiprivadas de objetos. Por el momento, ignora este tipo de datos. Si quieres saber más acerca de los símbolos haz click [aquí](https://exploringjs.com/es6/ch_symbols.html).
 
 ### V. Variables
 

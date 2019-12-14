@@ -11,7 +11,7 @@ Cuándo eres desarrollador de software, nos referimos al **ambiente de desarroll
 
 En este tutorial, vamos a aprender como instalar **Node.js**, la plataforma que nos permite ejecutar programas escritos en JavaScript. Además, vamos a instalar **Atom**, un editor de texto que nos permite escribir programas utilizando *syntax highlighting* y nos facilita la lectura de código.
 
-Para instalar **Atom** simplemente visita [esta página](http://atom.io) y descarga la versión para tu sistema operativo.
+Para instalar **Atom** simplemente visita [esta página](https://atom.io) y descarga la versión para tu sistema operativo.
 
 Selecciona las instrucciones dependiendo de tu sistema operativo:
 
